@@ -1,0 +1,49 @@
+dart run easy_localization:generate -h
+dart run easy_localization:generate -S "assets/translations/" -O "lib/core/translations/"
+dart run easy_localization:generate -S "assets/translations/" -O "lib/core/translations/" -o "locale_keys.g.dart" -f keys
+
+dart run build_runner build --delete-conflicting-outputs
+
+dart run flutter_native_splash:create
+
+dart run flutter_launcher_icons
+
+flutter pub add dio flutter_bloc hive hive_flutter gap smooth_page_indicator
+
+flutter pub add freezed_annotation
+flutter pub add dev:build_runner
+flutter pub add dev:freezed
+# if using freezed to generate fromJson/toJson, also add:
+flutter pub add json_annotation
+flutter pub add dev:json_serializable
+
+📝 🚀 📄 🚚  🔨 🐛 🎉 ➕ 💪 ✨ ➖ 🔖 🔥 🗑 🎨 💄 📚 🔍 🛠 🚨 ✅
+
+🎉 Finish
+🚚 Work in
+✏️ Edit in
+➕ Add
+➕ Add translation
+➕ Add assets
+✨ Add
+🎨 Add Styles
+🔨 Refactor code
+🐛 Fix bugs
+🔧 Fix
+🔨 Refactor code - 🐛 Fix bugs
+✏️ Rename / move a file(s) / folder(s)
+✏️ Move files
+✏️ Rename files
+✏️ Move folder
+🧹 Some edit
+🧹 Refactor UI
+🛠 Methods add
+📦 Add Package
+📦 Add Packages
+📈 Improve & Optimizations Performance
+💪 Improve UX & UI
+
+
+flutter clean
+flutter pub get
+flutter build apk --release
